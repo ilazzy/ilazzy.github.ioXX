@@ -9,6 +9,7 @@
     opacity: 0;
   }
 }
+
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -10760,32 +10761,42 @@ textarea.form-control-lg {
   position: relative;
   padding: 0.6400rem 3.875rem 0.8375rem 1.25rem;
   font-weight: 670;
-  margin: 0;
+  margin: 15px;
   border: 0.1rem solid rgba(255, 255, 255, 0.6);
   background-color: #fff;
-  display: block;
+  display: inline-block;
+  transition: 1.2s;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 .btn-rounded span {
   position: absolute;
-  background-color: #9926f0;
+  background: linear-gradient(45deg, rgba(34,195,142,1) 0%, rgba(253,163,45,1) 100%);
   width: 2.6rem;
   height: 2.6rem;
   top: 50%;
   right: 4px;
   transform: translateY(-50%);
   border-radius: 100%;
+  transition: 0.25s linear;
 }
-.btn-rounded span i {
+.btn-rounded span i {   /*ARROW INSIDE PILL BUTTON*/
   color: #fff;
   font-size: 1rem;
   line-height: 2.5rem;
 }
 .btn-rounded:hover {
+  /* transition-delay: 500ms; */
+  /* transition: background-color 0.5s ease; */
   background: linear-gradient(to right, rgba(240, 38, 94, 1), rgba(209, 34, 227, 0.95));
   color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  /* transition: background-color 10.8s ease-in */
 }
 .btn-rounded:hover span {
-  background-color: rgba(0, 0, 0, 0.6);
+  /* background: #9926f0 */
+  background: rgb(34,195,126);
+  background: linear-gradient(353deg, rgba(34,195,126,1) 3%, rgba(30,171,121,1) 46%, rgba(7,29,93,1) 100%);
+  transition: 0.45s linear;
 }
 
 .display-2 {
@@ -10801,13 +10812,15 @@ textarea.form-control-lg {
 .display-2--description {
   font-size: 1rem;
   display: block;
-  margin-top: -1rem;
+  margin-top: 0.1rem;
+  margin-right: 2.0rem;
   text-transform: none;
 }
 @media (min-width: 992px) {
   .display-2--description {
     font-size: 1.4rem;
     display: inline-block;
+    font-family: 'Raleway', sans-serif;
   }
 }
 
@@ -10917,10 +10930,10 @@ textarea.form-control-lg {
   padding: 0 0 5rem 0;
 }
 .campanies__logo-box {
-  max-width: 100%;
-  height: 3rem;
-  margin-bottom: 2rem;
-  padding: 0.5rem;
+
+  height: 7rem;
+  margin-bottom: rem;
+  padding: rem;
   text-align: center;
   position: relative;
 }
@@ -10928,7 +10941,7 @@ textarea.form-control-lg {
   height: 100%;
 }
 .campanies__logo-box img:hover {
-  filter: grayscale(120);
+  filter: grayscale(120)
 }
 
 .services {
