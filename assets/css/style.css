@@ -1424,7 +1424,7 @@ progress {
 
   .col-lg-2 {
     flex: 0 0 auto;
-    width: 16.66666667%;
+    width: 14.66666667%;
   }
 
   .col-lg-3 {
@@ -10930,10 +10930,8 @@ textarea.form-control-lg {
   padding: 0 0 5rem 0;
 }
 .campanies__logo-box {
-
-  height: 7rem;
   margin-bottom: rem;
-  padding: rem;
+  padding: 17%;
   text-align: center;
   position: relative;
 }
